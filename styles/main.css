@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.rotate {
+    animation: rotation 4s;
+}
+
+.rotatereverse {
+    animation: rotationreverse 4s;
+}
+
+.linear {
+    animation-timing-function: linear;
+}
+
+.infinite {
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotationreverse {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-359deg);
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.servername {
+    font-family: 'Fantasy', Impact !important;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    font-size: 56px;
+    text-align: right;
+    color: rgb(255, 174, 0);
+    text-shadow: 0.1vw 0.1vw #000000;
+    font-size: 2vw;
+}
+
+.serverversion {
+    font-family: 'Fantasy', Impact !important;
+    position: absolute;
+    top: 5vw;
+    right: 1%;
+    font-size: 23px;
+    font-size: 1vw;
+    text-align: right;
+    color: rgb(255, 174, 0);
+    text-shadow: 0.1vw 0.1vw #000000;
+}
+
+.loadingicon {
+    position: fixed;
+    top: 80%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 174, 0);
+}
+
+.randomtext {
+    font-family: 'Fantasy', Impact !important;
+    position: fixed;
+    top: 10%;
+    right: 25%;
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    font-size: 0.95vw;
+    color: rgb(255, 174, 0);
+    text-shadow: 0.1vw 0.1vw #000000;
+}
+
+.loading-bar {
+    font-family: 'Fantasy', Impact !important;
+    color: rgb(255, 174, 0);
+    font-size: 26px;
+    font-size: 1vw;
+    text-shadow: 0.1vw 0.1vw #000000;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    position: relative;
+    
+}
+.progress-bar {
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: 63%;
+}
+
+body {
+   width:100%;
+   height: 100%;
+}
+
+.imgbox {
+    width: 100%;
+}       
+
+@keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@keyframes nothing {}
+
+.imgbox img {
+  object-fit:cover;
+  display:inline;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  position: absolute;
+  opacity:0;
+  width: 100%;
+  height: 100%;         
+  margin-left: auto;
+  margin-right: auto;
+}

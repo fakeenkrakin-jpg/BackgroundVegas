@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+    </head>
+    <body>
+
+        <div class="imgbox">
+            <img id="img1" onload="imgLoaded()"/>
+            <img id="img2" onload="imgLoaded()"/>
+        </div>
+        
+        <div class = "loadingicon"> 
+            <img 
+                src="images/load_roulette_bars.png"
+                style="width:20%;height:auto;"
+            /> 
+        </div>
+        <div class = "loadingicon"> 
+            <img 
+                src="images/load_roulette_wheel.png" 
+                class="rotate linear infinite"
+                style="width:20%;height:auto;"
+            /> 
+        </div>
+        <div class = "loadingicon"> 
+            <img 
+                src="images/load_roulette_ball.png" 
+                class="rotatereverse linear infinite"
+                style="width:20%;height:auto;"
+            /> 
+        </div>
+        <div class = "servername">
+            <p>
+                Fallout <br>
+                New World Blues
+            </p>
+        </div>
+        <div class = "serverversion">
+            <p>
+                Version 0.0.1
+            </p>
+        </div>
+        <div class = "randomtext"> 
+            <p id ="toptext"></p> 
+        </div>
+
+        <!-- build:js scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:remove -->
+        <script src="scripts/contentloaded.js"></script>
+        <script src="scripts/demo.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
