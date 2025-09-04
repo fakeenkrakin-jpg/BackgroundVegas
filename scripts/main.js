@@ -3,7 +3,7 @@ function getRandomInt(max) {
 }
 
 var titles = [
-   "Їбав мамку Бушера",
+   "",
 ];
 
 var Backgrounds = [
